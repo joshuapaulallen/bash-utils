@@ -6,6 +6,9 @@ alias ll='ls -la'
 # navigation
 alias dev='cd ${DEV_HOME}'
 
+# grep
+alias grepjs='grep -R --include=*.js --exclude-dir=node_modules'
+
 # docker
 alias dc='docker-compose'
 alias dps='docker ps'
