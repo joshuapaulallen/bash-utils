@@ -21,8 +21,6 @@ fi
 if [ -f ${SCRIPTS_HOME}/git/git-completion.bash ]; then
 	. ${SCRIPTS_HOME}/git/git-completion.bash
 fi
-# pull strategy to rebase
-git config --bool pull.rebase true
 
 # nvm
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
