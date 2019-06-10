@@ -2,6 +2,7 @@
 alias init='. ~/.bashrc'
 alias ls='ls -GH'
 alias ll='ls -la'
+alias ..='cd ..'
 
 # navigation
 alias dev='cd ${DEV_HOME}'
