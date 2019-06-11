@@ -3,6 +3,11 @@ alias init='. ~/.bashrc'
 alias ls='ls -GH'
 alias ll='ls -la'
 alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+alias h='history'
+alias vi='vim'
 
 # navigation
 alias dev='cd ${DEV_HOME}'
