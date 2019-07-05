@@ -8,6 +8,7 @@ alias ....='cd ../../../'
 alias .....='cd ../../../../'
 alias h='history'
 alias vi='vim'
+alias diff='colordiff'
 
 # navigation
 alias dev='cd ${DEV_HOME}'
@@ -20,6 +21,10 @@ alias dc='docker-compose'
 alias dps='docker ps'
 # removes orphaned images
 alias drmi='docker rmi $(docker images --filter "dangling=true" -q --no-trunc)'
+# removes all images with tag
+alias drmi-with-tag='drmi $(docker images | grep $1 | tr -s " " | cut -d " " -f 3)'
+# removes all images (nuclear option)
+alias drmi-nuke='drmi -f $(docker images -aq)'
 # removes volumes
 alias drmv='docker rm -fv $(docker ps -aq)'
 
