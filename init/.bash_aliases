@@ -28,6 +28,10 @@ alias drmi-nuke='drmi -f $(docker images -aq)'
 # removes volumes
 alias drmv='docker rm -fv $(docker ps -aq)'
 
+# python
+# use python to start a simple HTTP server with the current directory as the document root, on port 8000
+alias simple-http-server="python -m SimpleHTTPServer"
+
 # git
 alias gits='git status'
 alias git-reset='git reset --hard HEAD'
